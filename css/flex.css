@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+body {
+  font-family: helvetica;
+}
+
+/* ------ header ------ */
+.header {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
+}
+
+.header__title {
+  font-size: 20px;
+}
+
+/* ------ menu ------ */
+.menu {
+  list-style: none;
+  display: flex;
+  padding: 0px 20px;
+}
+
+.menu__link {
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 80%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__title, .nav {
+    width: 100%;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+
+  .menu__link {
+    padding: 20px 0px;
+  }
+}
+
+/* ------ top ------ */
+.top {
+  width: 100%;
+  height: 500px;
+  background-color: green;
+  position:relative;
+  margin-bottom: 30px;
+}
+
+.top__title {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   font-size: 1.7rem;
+   color: #fff;
+}
+
+/* ------ service ------ */
+.section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto;
+  
+}
+
+.section__title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  padding-top: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.service__item {
+  width: 90%;
+  max-width: none;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.service__item--blue {
+  background-color: #ccf1f7;
+}
+
+.service__item--beige {
+  background-color: #faebd7;
+}
+
+.service__subtitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.service__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 40px;
+}
+.plan__item {
+  background-color: white; 
+  color: #000;
+  width: 100%;
+  padding: 20px;
+  margin: 0 5px;
+}
+
+.plan__title--gray {
+  background-color: #666;
+  color: #fff;
+}
+.plan__title--red {
+  background-color: #e60012;
+  color: #fff;
+}
+.plan__title--blue {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.plan__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  max-width: 300px;
+  font-size: 1.1rem;
+  text-align: center;
+
+}
+
+.plan__text {
+  font-size: 14px;
+  line-height: 1.6;
+  
+}
+
+
+
+/* -----------------------------
+虫食いセクション ①
+----------------------------- */
+
+/* ------ details ------ */
+
+
+
+/* -----------------------------
+----------------------------- */
+
+/* -----------------------------
+虫食いセクション ②
+----------------------------- */
+
+/* ------ plan ------ */
+
+
+/* -----------------------------
+----------------------------- */
+
+/* ------ footer ------ */
+
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .plan {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  
+    padding: 0;
+  }
+
+  .plan__item {
+    width: 90%;
+    max-width: 340px;
+    background: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0,0,.1);
+    margin: 0 auto ;
+  }
+
+  .plan__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .plan__text {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
